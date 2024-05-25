@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --bg-button: #4251f4;
+  --bg-main: #d0d4f4;
+  --bg-hr: #e1e1e1;
+
+  --border-hr: #666;
+  --border-focus: #6f6f6f;
+  --border-input: #a4a4a4;
+
+  --text-p: #565656;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  background-color: var(--bg-main);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 500px;
+  padding: 25px 40px 0;
+  border-radius: 12px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.23);
+}
+img {
+  height: 40px;
+  margin-left: 175px;
+  transform: rotate(20deg);
+}
+h1 {
+  font-size: 55px;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+}
+h3 {
+  margin-top: 22px;
+  font-size: 28px;
+}
+p {
+  padding: 8px 0 35px 0;
+  font-size: 14px;
+  color: var(--text-p);
+  font-weight: 400;
+}
+h1 {
+  text-align: center;
+}
+hr {
+  color: var(--border-hr);
+  background-color: var(--bg-hr);
+  height: 1px;
+  border: 0;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.form label {
+  text-align: start;
+}
+.form label,
+.form input,
+.form button {
+  width: 100%;
+}
+.form label {
+  margin: 9px 0;
+}
+.form input {
+  padding: 15px 12px;
+  outline: none;
+  border: 1px solid var(--border-input);
+  border-radius: 8px;
+  margin-bottom: 9px;
+  transition: 0.5s all;
+}
+
+.form input:focus {
+  border: 1px solid var(--border-focus);
+}
+
+.form button {
+  margin: 12px auto;
+  padding: 14px;
+  background-color: var(--bg-button);
+  color: white;
+  border: none;
+  font-size: 14px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.form button:hover {
+  cursor: pointer;
+}
+.form p {
+  margin: 9px 0;
+  font-size: 13px;
+  font-weight: normal;
+}
+.form p span {
+  font-weight: bold;
+}
